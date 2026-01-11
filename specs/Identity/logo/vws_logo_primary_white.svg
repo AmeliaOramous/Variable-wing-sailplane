@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" style="background:#000">
+<rect x="0" y="32" width="160" height="16" fill="#fff"/>
+<line x1="60" y1="8" x2="92" y2="72" stroke="#fff" stroke-width="12"/>
+<text x="200" y="54" font-family="Inter, sans-serif" font-size="32" font-weight="500" fill="#fff">Variable Wing Sailplane</text>
+</svg>
