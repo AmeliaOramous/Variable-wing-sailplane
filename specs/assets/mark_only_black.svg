@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" role="img" aria-label="Variable Wing Sailplane hinge line mark (black)">
+  <!-- Wing bar (8:1): 800w x 100h -->
+  <rect x="50" y="50" width="800" height="100" fill="#000"/>
+
+  <!-- Hinge line @ 22.5°, intersects bar centerline at 38% from left -->
+  <!-- Intersection point: x = 50 + (0.38 * 800) = 354; y = 100 -->
+  <g transform="rotate(22.5 354 100)">
+    <rect x="348" y="-250" width="12" height="900" fill="#000"/>
+  </g>
+</svg>

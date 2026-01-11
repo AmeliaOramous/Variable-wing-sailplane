@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" role="img" aria-label="Variable Wing Sailplane hinge line mark (inverse)">
+  <rect x="0" y="0" width="900" height="200" fill="#000"/>
+  <rect x="50" y="50" width="800" height="100" fill="#fff"/>
+  <g transform="rotate(22.5 354 100)">
+    <rect x="348" y="-250" width="12" height="900" fill="#fff"/>
+  </g>
+</svg>

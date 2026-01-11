@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 380" role="img" aria-label="Variable Wing Sailplane stacked lockup (black)">
+  <style>
+    .wm{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-weight:500; fill:#000;}
+  </style>
+
+  <!-- Mark (centered) -->
+  <!-- Wing bar 8:1: 800w x 100h -->
+  <rect x="90" y="70" width="800" height="100" fill="#000"/>
+  <!-- Intersection: x = 90 + (0.38 * 800) = 394; y = 120 -->
+  <g transform="rotate(22.5 394 120)">
+    <rect x="388" y="-260" width="12" height="900" fill="#000"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text class="wm" x="490" y="285" font-size="64" text-anchor="middle" dominant-baseline="middle" letter-spacing="0">
+    Variable Wing Sailplane
+  </text>
+</svg>

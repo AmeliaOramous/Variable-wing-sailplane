@@ -1,0 +1,129 @@
+<!-- /diagrams/mechanism/pivot_kinematics.svg -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 600"
+     width="900"
+     height="600">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="600" fill="#ffffff"/>
+
+  <!-- Fixed datum / fuselage reference -->
+  <line x1="120" y1="320" x2="780" y2="320"
+        stroke="#000000" stroke-width="3"/>
+  <text x="785" y="325"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Datum</text>
+
+  <!-- Fixed hardpoint block (fuselage) -->
+  <rect x="170" y="255" width="120" height="130"
+        fill="none"
+        stroke="#000000"
+        stroke-width="3"/>
+  <text x="170" y="245"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Fixed hardpoint</text>
+
+  <!-- Pivot axis (fixed) -->
+  <line x1="360" y1="190" x2="360" y2="450"
+        stroke="#000000" stroke-width="3"/>
+  <text x="370" y="185"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Pivot axis</text>
+
+  <!-- Pivot node -->
+  <circle cx="360" cy="320" r="10"
+          fill="none"
+          stroke="#000000"
+          stroke-width="3"/>
+
+  <!-- Wing root link (moving body) - shown in two positions -->
+  <!-- Min sweep position (black) -->
+  <line x1="360" y1="320" x2="540" y2="260"
+        stroke="#000000" stroke-width="3"/>
+  <circle cx="540" cy="260" r="6" fill="#000000"/>
+  <text x="548" y="255"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Wing link (min)</text>
+
+  <!-- Max sweep position (light gray) -->
+  <line x1="360" y1="320" x2="500" y2="210"
+        stroke="#b0b0b0" stroke-width="2.25"/>
+  <circle cx="500" cy="210" r="6" fill="#b0b0b0"/>
+  <text x="508" y="205"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Wing link (max)</text>
+
+  <!-- Sweep envelope (light gray) -->
+  <path d="M 540 260 A 230 230 0 0 0 500 210"
+        fill="none"
+        stroke="#b0b0b0"
+        stroke-width="1.5"/>
+  <text x="565" y="220"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Sweep envelope</text>
+
+  <!-- Rotation indication (accent dashed + arrowheads) -->
+  <path d="M 525 252 A 210 210 0 0 0 510 220"
+        fill="none"
+        stroke="#19B6D2"
+        stroke-width="1.5"
+        stroke-dasharray="6,6"/>
+  <!-- Arrowheads -->
+  <path d="M 525 252 l -10 -3 l 4 9 z" fill="#19B6D2"/>
+  <path d="M 510 220 l 9 4 l -4 -10 z" fill="#19B6D2"/>
+
+  <text x="560" y="260"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Sweep range</text>
+
+  <!-- Actuator: fixed anchor + rod end (conceptual) -->
+  <!-- Fixed actuator anchor on fuselage block -->
+  <circle cx="220" cy="380" r="6" fill="#19B6D2"/>
+  <text x="170" y="410"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Actuator anchor</text>
+
+  <!-- Actuator rod (two positions, dashed accent) -->
+  <!-- Position A (to min) -->
+  <line x1="220" y1="380" x2="500" y2="330"
+        stroke="#19B6D2"
+        stroke-width="1.5"
+        stroke-dasharray="6,6"/>
+  <circle cx="500" cy="330" r="6" fill="#19B6D2"/>
+  <text x="508" y="335"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Rod end</text>
+
+  <!-- Position B (to max) -->
+  <line x1="220" y1="380" x2="470" y2="290"
+        stroke="#19B6D2"
+        stroke-width="1.5"
+        stroke-dasharray="6,6"
+        opacity="0.6"/>
+  <circle cx="470" cy="290" r="6" fill="#19B6D2" opacity="0.6"/>
+
+  <text x="300" y="455"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Actuator stroke (conceptual)</text>
+
+  <!-- Constraint note (minimal) -->
+  <text x="120" y="520"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Fixed: datum, hardpoint, pivot axis</text>
+  <text x="120" y="545"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Variable: wing link position, actuator stroke</text>
+
+</svg>

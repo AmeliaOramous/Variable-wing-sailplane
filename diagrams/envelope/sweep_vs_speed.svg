@@ -1,0 +1,121 @@
+<!-- /diagrams/envelope/sweep_vs_speed.svg -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 900 600"
+     width="900"
+     height="600">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="600" fill="#ffffff"/>
+
+  <!-- Plot area -->
+  <rect x="120" y="110" width="660" height="380"
+        fill="none"
+        stroke="#000000"
+        stroke-width="3"/>
+
+  <!-- Axes labels -->
+  <text x="450" y="520"
+        text-anchor="middle"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Airspeed (normalized)</text>
+
+  <text x="70" y="300"
+        text-anchor="middle"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000"
+        transform="rotate(-90 70 300)">Sweep angle (normalized)</text>
+
+  <!-- X axis ticks (reference) -->
+  <g stroke="#b0b0b0" stroke-width="1.5">
+    <line x1="252" y1="110" x2="252" y2="490"/>
+    <line x1="384" y1="110" x2="384" y2="490"/>
+    <line x1="516" y1="110" x2="516" y2="490"/>
+    <line x1="648" y1="110" x2="648" y2="490"/>
+  </g>
+
+  <!-- Y axis ticks (reference) -->
+  <g stroke="#b0b0b0" stroke-width="1.5">
+    <line x1="120" y1="186" x2="780" y2="186"/>
+    <line x1="120" y1="262" x2="780" y2="262"/>
+    <line x1="120" y1="338" x2="780" y2="338"/>
+    <line x1="120" y1="414" x2="780" y2="414"/>
+  </g>
+
+  <!-- Envelope band (limits) -->
+  <!-- Upper limit -->
+  <path d="M 120 160 C 250 150, 420 170, 780 210"
+        fill="none"
+        stroke="#b0b0b0"
+        stroke-width="2.25"/>
+  <!-- Lower limit -->
+  <path d="M 120 420 C 260 400, 450 380, 780 330"
+        fill="none"
+        stroke="#b0b0b0"
+        stroke-width="2.25"/>
+
+  <text x="790" y="215"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Upper limit</text>
+  <text x="790" y="335"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Lower limit</text>
+
+  <!-- Schedule curve (accent) -->
+  <path d="M 120 400 C 260 380, 420 330, 780 240"
+        fill="none"
+        stroke="#19B6D2"
+        stroke-width="1.5"
+        stroke-dasharray="6,6"/>
+
+  <!-- Key regions -->
+  <!-- Low speed region -->
+  <rect x="120" y="360" width="180" height="130"
+        fill="none"
+        stroke="#b0b0b0"
+        stroke-width="1.5"/>
+  <text x="130" y="380"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">Low speed</text>
+  <text x="130" y="402"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Prefer low sweep</text>
+
+  <!-- High speed region -->
+  <rect x="600" y="110" width="180" height="150"
+        fill="none"
+        stroke="#b0b0b0"
+        stroke-width="1.5"/>
+  <text x="610" y="130"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#000000">High speed</text>
+  <text x="610" y="152"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Prefer high sweep</text>
+
+  <!-- Legend (minimal) -->
+  <line x1="130" y1="80" x2="200" y2="80"
+        stroke="#19B6D2"
+        stroke-width="1.5"
+        stroke-dasharray="6,6"/>
+  <text x="210" y="85"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#19B6D2">Conceptual sweep schedule</text>
+
+  <line x1="470" y1="80" x2="540" y2="80"
+        stroke="#b0b0b0"
+        stroke-width="2.25"/>
+  <text x="550" y="85"
+        font-family="Inter, sans-serif"
+        font-size="14"
+        fill="#6f6f6f">Envelope limits</text>
+
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" shape-rendering="crispEdges" role="img" aria-label="Hinge line mark 24px (inverse)">
+  <rect x="0" y="0" width="24" height="24" fill="#000"/>
+  <rect x="0" y="10.5" width="24" height="3" fill="#fff"/>
+  <g transform="rotate(22.5 9.12 12)">
+    <rect x="8.37" y="-14" width="1.5" height="52" fill="#fff"/>
+  </g>
+</svg>
